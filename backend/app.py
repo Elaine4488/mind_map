@@ -11,7 +11,7 @@ app = Flask(__name__, static_folder="../frontend/dist", static_url_path="/")
 CORS(app, 
      resources={
          r"/*": {  # 允許所有路由
-             "origins": ["http://localhost:8080", "http://localhost:8081"],
+             "origins": ["http://localhost:8080", "http://localhost:8081", "https://mind-map-backend-lvdu.onrender.com"],
              "methods": ["GET", "POST", "OPTIONS"],
              "allow_headers": ["Content-Type"],
              "supports_credentials": True,
